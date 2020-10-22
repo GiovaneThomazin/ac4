@@ -6,10 +6,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def nao_entre_em_panico():
+   resposta = "teste de docker "
 
-	primos = "Docker esta funcionando"
-
-  return primos
+   return resposta
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
